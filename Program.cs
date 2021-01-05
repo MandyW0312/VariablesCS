@@ -28,13 +28,10 @@ namespace VariablesCS
 
             var firstNumberAsString = Console.ReadLine();
             var secondNumberAsString = Console.ReadLine();
-            Console.WriteLine(firstNumberAsString);
-            Console.WriteLine(secondNumberAsString);
 
             var firstOperand = double.Parse(firstNumberAsString);
             var secondOperand = double.Parse(secondNumberAsString);
-            Console.WriteLine(firstOperand);
-            Console.WriteLine(secondOperand);
+
 
             var sum = firstOperand + secondOperand;
             var difference = firstOperand - secondOperand;
