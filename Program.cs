@@ -11,14 +11,13 @@ namespace VariablesCS
             var numberOfCupsOfCoffee = 1;
             var fullName = "Amanda Joy Wade";
             var today = DateTime.Now;
-            Console.WriteLine(numberOfCupsOfCoffee + " " + fullName + " " + today);
+            Console.WriteLine($"My name is {fullName} and I have had {numberOfCupsOfCoffee} cup of coffee on {today}");
 
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
 
             Console.WriteLine("It is very nice to meet you " + userName);
 
-            // Unsure if this is correct
             Console.Write("Need help with Math Homework? Please give two numbers. ");
 
             var firstNumberAsString = Console.ReadLine();
@@ -26,12 +25,11 @@ namespace VariablesCS
             Console.WriteLine(firstNumberAsString);
             Console.WriteLine(secondNumberAsString);
 
-            var firstOperand = int.Parse(firstNumberAsString);
-            var secondOperand = int.Parse(secondNumberAsString);
+            var firstOperand = double.Parse(firstNumberAsString);
+            var secondOperand = double.Parse(secondNumberAsString);
             Console.WriteLine(firstOperand);
             Console.WriteLine(secondOperand);
 
-            //Doing Math
             var sum = firstOperand + secondOperand;
             var difference = firstOperand - secondOperand;
             var product = firstOperand * secondOperand;
